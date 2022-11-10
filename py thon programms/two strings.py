@@ -245,3 +245,5 @@ print(dupli2)
 a="123"
 print(a)
 b=""
+
+v="vaishnavi"
