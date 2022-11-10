@@ -243,3 +243,4 @@ print(dupli2)
 
 # print all permutation of sting
 a="123"
+print(a)
