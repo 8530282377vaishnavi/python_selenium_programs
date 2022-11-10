@@ -155,6 +155,7 @@ def least_freq(test_str):
 
 test_str = "GeeksfoarGeeks"
 least_freq=least_freq(test_str)
+
 print(least_freq)
 
 
@@ -189,3 +190,55 @@ def odd_freq(test_str):
 
 print(odd_freq("geekforgeeks"))
 
+
+def occurance(str1):
+    str2 = " "
+    str3=" "
+    for i in str1:
+        if i == "r":
+            str2 = str1.replace("r", "$")
+
+            str2=str2[:0]+"r"+str2[0+1:]
+
+    return str2
+str1= "restartthecomputer"
+occurances = occurance(str1)
+print(occurances)
+
+
+#Find all of the numbers from 1–1000 that have a 6 in them
+for i in range(0,100,6):
+    print(i)
+
+# write the frequency of charactor
+def freq(a):
+  b=list(a)
+  freq=[b.count(l) for l in b]
+  print(freq)
+  freq2=dict(zip(a,freq))
+  return max(occurance.items())
+
+
+# charactor with highst occurance
+a="aabbccyyyyy"
+List=list(a)
+freq=[List.count(l) for l in List]
+occurance=dict(zip(List,freq))
+print("max",max(occurance.items()))
+
+print(occurance)
+
+# wap reverse every word of string in proper manner
+reverse="this is my book"
+reverse_str=reverse[::-1]
+reverse_str2=reverse_str.split()
+rev=reverse_str2[::-1]
+print(rev)
+
+#how to remove duplicate from the given string
+dupli="vaishnavi"
+dupli2=set(dupli)
+print(dupli2)
+
+
+# print all permutation of sting
