@@ -3,6 +3,9 @@ import keyword
 X= 500
 Y= 600
 print(X+Y)
+x2=4000
+y2=5000
+print(x2*y2)
 #These are the calculation
 # These are the calculations
 
