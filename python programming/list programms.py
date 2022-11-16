@@ -109,5 +109,106 @@ def list_tuple():
 
 list_tuple()
 
+#  Remove empty tuples from a list
+# tuples = [(), (‘ram’,’15’,’8′), (), (‘laxman’, ‘sita’), (‘krishna’, ‘akbar’, ’45’), (”,”),()]
+# Output : [(‘ram’, ’15’, ‘8’), (‘laxman’, ‘sita’), (‘krishna’, ‘akbar’, ’45’), (”, ”)]
+# def remove_tuple(tuples):
+#     new_list=[]
+#     for i in tuples:
+#         if i==tuple():
+#             continue
+#         new_list.append(i)
+#     return new_list
+# tuples = [(',','8'), (), ('0', '00', '000'), ('birbal', ',' '45'), (),  (","),()]
+# print(remove_tuple(tuples))
 
 
+#
+def remove_tuple(tuples):
+
+    for i in tuples:
+        if len(i)==0:
+            tuples.remove(i)
+
+    return tuples
+tuples = [(',','8'), (), ('0', '00', '000'), ('birbal', ',' '45'), (),  (","),()]
+print(remove_tuple(tuples))
+
+
+# Program to print duplicates from a list of integers
+# Input : list = [10, 20, 30, 20, 20, 30, 40, 50, -20, 60, 60, -20, -20]
+# Output : output_list = [20, 30, -20, 60]
+def dupli_list(lis1):
+    set11=[]
+    lis11=[]
+    for i  in lis1:
+        if i in set11:
+            lis11.append(i)
+
+
+        else:
+            set11.append(i)
+
+    return  set(lis11)
+lis1=[10, 20, 30, 20, 20, 30, 40, 50, -20, 60, 60, -20, -20]
+print(dupli_list(lis1))
+
+
+# Convert List to List of dictionaries
+# Input : test_list = [“Gfg”, 3, “is”, 8], key_list = [“name”, “id”]
+# Output : [{‘name’: ‘Gfg’, ‘id’: 3}, {‘name’: ‘is’, ‘id’: 8}]
+
+def list_dict(test_list,key_list):
+    res2=[]
+    n=len(test_list)
+    for i in range(0,n,2):
+        # rec22.append({key_list[0]:test_list[i], key_list[1]:test_list[i+1]})
+        res2.append({key_list[0]: test_list[i], key_list[1] : test_list[i + 1]})
+
+
+    return res2
+
+
+test_list = ["Gfg", 3, "is", 8]
+key_list = ["name", "id"]
+print(list_dict(test_list,key_list))
+
+#
+def test_str(test_list ,key_list):
+   n = len(test_list)
+   res = []
+   for idx in range(0, n, 2):
+       res.append({key_list[0]: test_list[idx], key_list[1] : test_list[idx + 1]})
+
+# printing result
+   return ("The constructed dictionary list : " + str(res))
+test_list = ["Gfg", 3, "is", 8, "Best", 10, "for", 18, "Geeks", 33]
+key_list = ["name", "number"]
+print(test_str(test_list,key_list))
+
+
+#
+lis111=["Gfg", 3, "is", 8, "Best", 10, "for", 18, "Geeks", 33]
+
+dict1=dict(zip(lis111,lis111))
+print(dict1)
+
+
+# Convert a list to dictionary
+# Input : ['a', 1, 'b', 2, 'c', 3]
+# Output : {'a': 1, 'b': 2, 'c': 3}
+def list_dict(abc):
+    dect={abc[i]:abc[i+1] for i in range(0,len(abc),2)}
+    return dect
+abc=['a', 1, 'b', 2, 'c', 3]
+print(list_dict(abc))
+# sort list without using sort
+def sort_list(temp):
+    for i in range(0,len(temp)):
+        for j in  range(i+1,len(temp)):
+            if temp[i]>temp[j]:
+                temp[i],temp[j]=temp[j],temp[i]
+    return temp
+
+temp=[1,2,4,3,6,5,8,7,9,6]
+print(sort_list(temp))
