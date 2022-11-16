@@ -7,6 +7,7 @@ y3=500
 x3=600
 print(x3*y3)
 print("vaishnavi")
+s="ajinkya"
 #These are the calculation
 # These are the calculations
 
