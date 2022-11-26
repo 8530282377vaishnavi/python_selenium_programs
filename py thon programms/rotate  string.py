@@ -11,7 +11,7 @@ def leftrotationstring(name):
         print()
 
 
-string="NETSET"
+string="123"
 leftrotationstring(string)
 
 

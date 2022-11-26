@@ -79,19 +79,10 @@ list1=[12, 67, 98, 34]
 #            list2 = [ 0,   1,   1,    0,   1,   2,   2,   0,   1]
 # Output : [‘a’, ‘d’, ‘h’, ‘b’, ‘c’, ‘e’, ‘i’, ‘f’, ‘g’]
 
-def sort_ls(list11,list22):
-    zipp= (zip(list11, list22))
-    z = [x for _,  x in sorted(zipp)]
-    return z
 
-x= ["a", "b", "c", "d", "e","f", "g", "h", "g"]
-y = [ 0,   1,   1,    0,   1,   2,   2,   0,   1]
-print(sort_ls(x,y))
-
-#
 def sort_ls2(list13,list14):
     z2=dict(zip(list13,list14))
-    sort_by_value={x:y for x,y in sorted(z2.items(), key= lambda y: y[1])}
+    sort_by_value={x:y for x,y in sorted(z2.items(), key=lambda y: y[1])}
     lss=[]
     for i in sort_by_value.keys():
         lss.append(i)

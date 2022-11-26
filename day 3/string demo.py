@@ -24,7 +24,7 @@ print(id(str1))    #id shows the memory location of variable
 str1=str1+  "  to python"
 print(id(str1))
 print(str1)
-#if the value is changed after updation the it is mutable
+
 
 #example 4  : + and * with the string
 # str="welcome"
@@ -47,7 +47,7 @@ print(s[:5])
 print(s[0:-1]) # meance split last value
 print(s[1:-1])
 print(s[1:5])
-
+print(s[3:])
 
 #example 61
 # print ord()  char()
@@ -132,11 +132,11 @@ print(s6)
 #      revr_str=i+revr_str
 # print("reverse string is :",revr_str)
 
-# b='ajinkya'
-# rev_str=''
-# for i in b:
-#     rev_str=i+rev_str
-# print("reverse string is :",rev_str)
+b='ajinkya'
+rev_str2=''
+for i in b:
+    rev_str2=i+rev_str2
+print("reverse string is :",rev_str2)
 
 #
 #
@@ -168,6 +168,13 @@ print(s.lower())
 
 
 #Example 15 : i want to print welcome in even order
+
+ss="welcome"
+ss2=""
+for i in range(len(ss)):
+    if i%2==0:
+        ss2=ss2+ss[i]
+print(ss2)
 
 
 

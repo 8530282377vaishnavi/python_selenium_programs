@@ -1,7 +1,7 @@
 # collection dictionary....
 # dictionary is unordered but it contain index.
 # dictionary is mutable(changeable).
-# it contain only keys and value are store in {} curly bracket.
+# it contains only keys and value are store in {} curly bracket.
 # main thing dictionary are like hashmap the hashmap are present in java.
 #key is always (must)unique and the values may or maynot be unique.
 
@@ -24,6 +24,8 @@ mydict={
 def Marge(dictionary1,mydict):
     res=dictionary1|mydict
     return  res
+
+
 dictionary1 = {"product": 3000, "product2": 2000, "product3": 5000}
 mydict = {
         "brand": "hyundai",
@@ -92,12 +94,15 @@ print(mydict.get("Model"))
 
 #example 6 :
 #number of item in dictionary
-# mydict={
-#     "brand": "hyundai",
-#     "Model": "i10",
-#     "year" : 2021
-# }
-
+mydict={
+    "brand": "hyundai",
+    "Model": "i10",
+    "year" : 2021
+}
+count=0
+for x,y in mydict.items():
+    count=count+1
+print("cc",count)
 #print(len(mydict))
 
 # example 7  :
@@ -146,3 +151,27 @@ mydict={
 #with copy function
 mydect2=mydict.copy()
 print(mydect2)
+
+
+
+rec={}
+# n=int(input("enter the no of student:"))
+# i=0
+# while i<=n:
+#     Name=input("enter the name of student:")
+#     percentage=input("enter the % if student")
+#     rec[Name]=percentage
+#     i=i+1
+#
+# print(rec)
+# for x in rec:
+#     print(x,rec[x])
+
+rec["vaishnavi"]="8530282377"
+print(rec)
+
+
+# single key with multiple values
+list1=["ajinkya","vaishnavi","patil"]
+dict={100:list1}
+print(dict)

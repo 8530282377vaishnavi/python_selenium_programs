@@ -8,3 +8,8 @@ print(a>=b)
 print(a<=b)
 print(a!=b)
 print(a==b)
+
+str1="vaishnavi"
+str2="vaishnavi"
+print(id(str1))
+print(id(str2))

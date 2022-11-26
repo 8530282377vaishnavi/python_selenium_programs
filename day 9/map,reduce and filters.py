@@ -5,6 +5,10 @@ def new(a):
 a=map(new,[2,3,4,5,7])
 print(list(a))
 
+def old(b):
+    return b*200
+b=map(old,[1,3,2,4,5,7])
+print(list(b))
 def division(a):
     return a+200
 x=map(division,[2,3,4,5,7])
@@ -34,6 +38,13 @@ def filters(a):
         return a
 j=filter(filters,[1,2,8,7,9])
 print(list(j))
+def filt(s):
+    if s==10:
+      return s
+
+
+g=filter(filt,[10,20,40,50])
+print("vaish",list(g))
 
 z=filter(lambda x:x>=3,[1,2,8,7,9])
 print(tuple(z))
@@ -44,7 +55,7 @@ from functools import reduce
 def redu(x,y):
     return x+y
 a=reduce(redu,[1,2,3,4,5,6,77])
-print(a)
+print("reduce",a)
 
 #lambda
 s=reduce(lambda a,b:a*b,[1,2,5,4,6,7])

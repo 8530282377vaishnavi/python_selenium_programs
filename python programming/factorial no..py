@@ -80,11 +80,13 @@ def fun(list2,list3):
     if i%2!=0:
        list2.append(i)
 
+
     else:
         if i%2==0:
            list3.append(i)
 
-
+ print(list2)
+ print(list3)
 
 print("odd",list2)
 print("even",list3)

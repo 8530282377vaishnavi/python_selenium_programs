@@ -10,3 +10,5 @@ Driver=webdriver.Chrome(service=serv_obj)
 # Bypass thrrough automation
 Driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth")
 Driver.maximize_window()
+
+"https://username:password@test.com"

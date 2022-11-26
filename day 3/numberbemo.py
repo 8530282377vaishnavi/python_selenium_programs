@@ -18,7 +18,11 @@ print(x)
 x2.sort()
 print(x2)
 print(x2[-1])
-
+a=x[0]
+for i in x:
+    if i>a:
+        a=i
+print("max:",a)
 #min. max. function both are available for both int and float
 print(max(12.2,20.3,33.5,22.6,55.5,66.6,58.8,90.2))
 print(min(20.6,30.2,50.3,5.0,60.3,90.2,9.6,8.5,70.5))

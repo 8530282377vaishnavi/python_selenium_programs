@@ -14,9 +14,10 @@
 num3=int(input("enter upper no.:"))
 num4=int(input("enter lower no.:"))
 for num5 in range(num3,num4+1):
-  if num5>1:
-       for i in range(2,num5):
-              if(num5%i)==0:
-                  break
-       else:
-         print(num5)
+    if num5>1:
+        for i in range(2,num5):
+            if (num5%i)==0:
+                break
+        else:
+                print(i)
+

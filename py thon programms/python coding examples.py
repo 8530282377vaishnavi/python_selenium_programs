@@ -6,14 +6,13 @@ rec=Counter(str)
 print("the each charactor no. of str is:",(rec))
 
 # method 2
-for_freq={}
+for_frq={}
 for i in str:
-    if i in for_freq:
-        for_freq[i] += 1
+    if i in for_frq:
+        for_frq[i]+=1
     else:
-        for_freq[i] =1
-print(for_freq)
-
+        for_frq[i]=1
+print(for_frq)
 #covert the string into charactor
 v="vaishnavi"
 print(v.count("a"))
@@ -90,6 +89,15 @@ if str2==rec3:
     print("str2 and rec3 are equal")
 else:
     print("str2 and rec3 are not equal")
+
+rev=""
+for i in str2:
+    rev=i+rev
+print("reverse:",rev)
+if rev==str2:
+    print("the str2 is palendrom")
+else:
+    print("the str2 is not palendrom")
 
 
 # reverse the string

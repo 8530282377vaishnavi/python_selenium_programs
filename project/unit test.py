@@ -7,12 +7,10 @@ import unittest
 
 
 class Google_search(unittest.TestCase):
-    # @classmethod
+    @classmethod
     def Set_upClass(self):
         self.Ser = Service("C:\web drivers selenium\chromedriver_win32\chromedriver.exe")
         self.Driver = webdriver.Chrome(service=self.Ser)
-        self.Driver.implicitly_wait(10)
-
     def Test_search(self):
         self.Driver.get("https://www.google.com/")
         self.Driver.find_element(By.XPATH, "//input[@class='gLFyf gsfi']").send_keys("Automation testing")
@@ -22,3 +20,9 @@ class Google_search(unittest.TestCase):
     def tearDownClass(self):
         self.Driver.quit()
         print("Test Pass")
+test=Google_search()
+test.setUpClass()
+test.Test_search()
+test.tearDownClass()
+
+

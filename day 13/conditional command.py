@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
-serv_object = Service("C:\web drivers selenium\chromedriver_win32\chromedriver.exe")
+serv_object = Service("C:\web drivers selenium\chromedriver_win32 (1)\chromedriver.exe")
 
 Driver = webdriver.Chrome(service=serv_object)
 
@@ -14,8 +14,8 @@ Driver.get("https://demo.nopcommerce.com/register?returnUrl=%2F")
 
 # is_display and is_enable = method
 searchbox = Driver.find_element(By.XPATH, "//*[@id='small-searchterms']")
-# print("Display status:", searchbox.is_displayed())
-# print("Enable status:", searchbox.is_enabled())
+print("Display status:", searchbox.is_displayed())
+print("Enable status:", searchbox.is_enabled())
 
 # is_selected = is for radio buttons and check box
 print("defult radio button status..... ")

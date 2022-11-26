@@ -4,7 +4,7 @@
 # the XPATH can be navigate through the attribute and element in DMO structure
 # XPAtH is an address of the element
 # their are two types of XPATH ---> 1) Absolute XPATH/ Full XPATH ,  2) Relative XPATH/Partial XAPTH
-# 1) Relative XPATH/Full XPATH=  1)The full XPATH is nevigate from root node
+# 1) absolute XPATH/Full XPATH=  1)The full XPATH is nevigate from root node
                             #    2)Start with single  shash/
                             #    3) Only use in HTML we call them as  tag/ in XML we call them as nodes
                             # example : /html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input

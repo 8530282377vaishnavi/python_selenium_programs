@@ -1,9 +1,9 @@
-# All exlinatin in notebook (software testing notebook )
+# All explanation  in notebook (software testing notebook )
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
-serv_obj=Service("C:\web drivers selenium\chromedriver_win32 (1)\chromedriver.exe")
+serv_obj=Service(" C :\ web drivers selenium\ chromedriver_win32 (1)\chromedriver.exe ")
 Driver=webdriver.Chrome(service=serv_obj)
 
 # self node axes in XPATH

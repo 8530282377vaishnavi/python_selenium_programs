@@ -1,5 +1,5 @@
 from selenium import webdriver
-from day22 import xlutils.py
+import day 22
 from selenium.webdriver.chrome.service import Service
 serv_obj=Service("C:\web drivers selenium\chromedriver_win32\chromedriver.exe")
 Driver=webdriver.Chrome(service=serv_obj)

@@ -81,7 +81,8 @@
 #
 # print(Area_Circle(5))
 
-
+n=567//10
+print(n)
 # prime no.
 # def Prime_no(num):
 #     if num>1:

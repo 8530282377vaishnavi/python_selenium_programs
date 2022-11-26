@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
-serv_object=Service("C:\web drivers selenium\chromedriver_win32\chromedriver.exe")
+serv_object=Service("C:\web drivers selenium\chromedriver_win32 (1)\chromedriver.exe")
 Driver=webdriver.Chrome(service=serv_object)
 
 Driver.get("https://www.globalsqa.com/demo-site/datepicker/")
@@ -20,10 +20,10 @@ Date_year=Select(Driver.find_element(By.XPATH,"//select[@class='ui-datepicker-ye
 Date_year.select_by_visible_text("2022")
 
 all_dates=Driver.find_elements(By.XPATH,"//table[@class='ui-datepicker-calendar']/tbody/tr/td")
-
-for date in all_dates:
-    if date.text==25:
-        date.click()
+date_1=23
+for dates in all_dates:
+    if (dates.is_enabled() and  dates.is_displayed() and str(dates.get_attribute("innerText"))==date_1):
+        dates.click()
         break
-
+print("ok")
 

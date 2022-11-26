@@ -54,12 +54,14 @@ print(str1)
 
 
 def remove_space(stri):
-    count=0
+    remove_spac=""
     for i in stri:
-        if not i.isspace():
-            count=count+1
+        if i.isspace():
+            continue
+        remove_spac=remove_spac+i
+    return remove_spac
 
-    return count
+
 
 stri='geeksforgeeks 33 best'
 remove_space=remove_space(stri)
@@ -69,13 +71,11 @@ print(remove_space)
 
 # half is uppercase
 def half_uppercase(test_str):
-    b=len(test_str)
-    a=len(test_str)//2
-    stri1=test_str[0:a].lower()
-    stri2=test_str[a:b].upper()
-    print(stri2)
-    stri3=stri1+stri2
-    return stri3
+    mid=len(test_str)//2
+    mid2=test_str[:mid].lower()
+    upper=test_str[mid:len(test_str)].upper()
+    half_uppercase=mid2+upper
+    return half_uppercase
 
 
 
@@ -109,7 +109,7 @@ def stat(s):
    print(a)
    s2=" "
    for i in a:
-      s2=s2+i[:-1]+i[-1].upper()+' '
+      s2=s2+i[:-1]+i[-1].upper()+" "
    return s2
 s="hello how are you"
 capitalization=stat(s)
@@ -144,11 +144,16 @@ print(remove_duplicate)
 # least freq in a string
 
 def least_freq(test_str):
+    freq=[]
 
     list1=list(test_str)
-    freq=[list1.count(l) for l in list1]
+    # freq=[list1.count(l) for l in list1]
+    for i in list1:
+        freq.append(list1.count(i))
     print(freq)
     count_str=dict(zip(list1,freq))
+    print(count_str)
+
     count_str2=min(count_str,key=count_str.get)
     return "list freq is ",count_str2
 
@@ -156,7 +161,7 @@ def least_freq(test_str):
 test_str = "GeeksfoarGeeks"
 least_freq=least_freq(test_str)
 
-print(least_freq)
+print("least_freq",least_freq)
 
 
 
@@ -188,12 +193,12 @@ def odd_freq(test_str):
             res.append(i)
     return res
 
-print(odd_freq("geekforgeeks"))
+print("odd freq",odd_freq("geekforgeeks"))
 
 
 def occurance(str1):
     str2 = " "
-    str3=" "
+
     for i in str1:
         if i == "r":
             str2 = str1.replace("r", "$")
@@ -209,6 +214,8 @@ print(occurances)
 #Find all of the numbers from 1–1000 that have a 6 in them
 for i in range(0,100,6):
     print(i)
+for i in range(0,10+1):
+    print(i*6)
 
 # write the frequency of charactor
 def freq(a):

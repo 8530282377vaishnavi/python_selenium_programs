@@ -20,14 +20,21 @@ string="Hello world with python"
 # method 1
 string2="Vais12hn89avi12"
 string3=""
+# for i in string2:
+#     if  i<='9':
+#         continue
+#     else:
+#         string3=string3+i
+# print(string3)
+
+# method 2
 for i in string2:
-    if  i<='9':
+    if i.isdigit():
         continue
-    else:
-        string3=string3+i
+    string3=string3+i
 print(string3)
 
-#method2
+#method3
 # for i in string2:
 #     if not i.isdigit():
 #         print(i,end="")

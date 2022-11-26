@@ -16,7 +16,7 @@ print(list(range(2,33,2)))
 # print using incriment
 # decreasing order
 print(list(range(10,1,-1)))
-
+print(list(range(100,1,-1)))
 # also print negative value
 print(list(range(-10,-3)))
 print(list(range(-10,3,1)))

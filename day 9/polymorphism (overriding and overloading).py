@@ -67,5 +67,13 @@ class Birds :
             print("This is not fly")
         if name is None :
             print("No inputs")
+
+    def fly(self ,lastname=None):
+        if lastname== 'monkey':
+            print("This bird is  fly")
+        if lastname== "penguin":
+            print("This is not fly")
+        if lastname is None :
+            print("No inputs")
 obj4=Birds()
-obj4.fly("parrot")
+obj4.fly("monkey")

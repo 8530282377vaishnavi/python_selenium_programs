@@ -112,7 +112,6 @@ it is an index collection of items in sequential manner'''
 #third approch using extend
 #mylist1.extend(mylist2)
 #print(mylist1)
-
 #example 12 : comparision  of two lists
 # mylist1 = ["apple", "banana", "mango", "cherry", "dragan fruit", "greps"]
 # mylist2=[1,2,3,4,5,6,7,8,9,10]
@@ -139,6 +138,7 @@ mylist1.reverse()
 print(mylist1)
 
 mylist2=[3,4,2,3,4,1,5,1,10,11,6,7,8]
+mylist3=[1,2,3,5,6]
 set=set(mylist2)
 print("The converted set :",set)
 

@@ -23,11 +23,11 @@ Data=Driver.find_element(By.XPATH,"//table[@name='BookTable']//tr[4]/td[1]").tex
 print(Data)
 
 # i want to read all the data from the table
-# for r in range(2,No_of_rows+1):
-#     for c in range(1,No_of_columons+1):
-#         Data = Driver.find_element(By.XPATH,"//table[@name='BookTable']//tr["+str(r)+"]/td["+str(c)+"]").text  # for dynamic web table
-#         print(Data,end="                       ")
-#     print()
+for r in range(2,No_of_rows+1):
+    for c in range(1,No_of_columons+1):
+        Data = Driver.find_element(By.XPATH,"//table[@name='BookTable']//tr["+str(r)+"]/td["+str(c)+"]").text  # for dynamic web table
+        print(Data,end="                       ")
+    print()
 
 
 #

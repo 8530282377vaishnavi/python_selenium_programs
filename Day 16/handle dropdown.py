@@ -31,5 +31,5 @@ for option in alloptions:
         break
 
 # i want to capture all the option from dropdown
-allelement=Driver.find_elements(By.XPATH,"//select[@id='input-country']//option")
-print(len(allelement))
+# allelement=Driver.find_elements(By.XPATH,"//select[@id='input-country']//option")
+# print(len(allelement))
