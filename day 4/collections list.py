@@ -145,3 +145,16 @@ print("The converted set :",set)
 
 mylist2.sort()
 print(mylist2)
+
+nums = [10, 5, 8, 20]
+nums.sort()
+print(nums[-1])
+
+nums = [10, 20, 4, 45, 99]
+nums.sort()
+num_list = nums[-1]
+num2 = []
+for num in nums:
+    if num != num_list:
+        num2.append(num)
+print(max(num2))

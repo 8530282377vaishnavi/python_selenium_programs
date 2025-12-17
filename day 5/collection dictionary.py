@@ -146,3 +146,13 @@ mydict={
 #with copy function
 mydect2=mydict.copy()
 print(mydect2)
+
+
+ # Remove Duplicate Values
+d = {"a": 10, "b": 20, "c": 10}
+
+result = {}
+for key, value in d.items():
+    if value not in result.values():
+        result.update({key: value})
+print(result)

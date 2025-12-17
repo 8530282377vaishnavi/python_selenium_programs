@@ -24,7 +24,7 @@ print(id(str1))    #id shows the memory location of variable
 str1=str1+  "  to python"
 print(id(str1))
 print(str1)
-#if the value is changed after updation the it is mutable
+#if the value is changed after update it is mutable
 
 #example 4  : + and * with the string
 # str="welcome"

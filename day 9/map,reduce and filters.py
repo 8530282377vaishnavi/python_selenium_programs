@@ -44,7 +44,7 @@ from functools import reduce
 def redu(x,y):
     return x+y
 a=reduce(redu,[1,2,3,4,5,6,77])
-print(a)
+print('resuca',a)
 
 #lambda
 s=reduce(lambda a,b:a*b,[1,2,5,4,6,7])

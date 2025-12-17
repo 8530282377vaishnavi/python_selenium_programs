@@ -1,10 +1,10 @@
 # OOPs encapsulation in python
 # in oops , you can restrict access to methods and variable
 # this can privent the data from being modified by accident and is known as encapsulation
-# encapsulation which is achived by using private variable and private method .
+# encapsulation which is achieved by using private variable and private method .
 # access specifire concept is main in encapsulation
 #public and private - in private their is variable and method and both are start with two underscore (__)
-# private variable- Access only their own class
+# private variable-Access only their own class
 # private variable- access only their own class or method if define
 
 

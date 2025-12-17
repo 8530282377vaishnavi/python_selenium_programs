@@ -8,27 +8,28 @@ ser_obj= Service("C:\web drivers selenium\chromedriver_win32/chromedriver.exe")
 Driver = webdriver.Chrome(service=ser_obj)
 
 Driver.get("https://www.facebook.com/")
-# for tag and id we use hash tag  (tag#id)
-# with tagname
+# for tag and id we use hash
+# tag  (tag#id)
+# with tag name
 #Driver.find_element(By.CSS_SELECTOR,"input#email").send_keys("patilvv.123vgs@gmail.com")
-# without tagname
+# without tag name
 #Driver.find_element(By.CSS_SELECTOR,"#email").send_keys("patilvv.123vgs@gmail.com ")
 
 # Tag and class= for class e use dot(tag.class)
-#Driver.find_element(By.CSS_SELECTOR,"input.inputtext").send_keys("Vishwas")
+#Driver.find_element(By.CSS_SELECTOR,"input.input text").send_keys("Vishwas")
 #Driver.find_element(By.CSS_SELECTOR,"._6luy ").send_keys("Vishwas")
 
-# tag and attribute we write tagname[attribute=value]
-#with tagname
+# tag and attribute we write tag name[attribute=value]
+#with tag name
 #Driver.find_element(By.CSS_SELECTOR,"input[placeholder=Password]").send_keys("avs")
-#without tagname
+#without tag name
 #Driver.find_element(By.CSS_SELECTOR,"[placeholder=Password]").send_keys("avs")
 
 
-# Tag,class and attribute then use tagname.valueofclass[attribute=value]
-# with tagname
-#Driver.find_element(By.CSS_SELECTOR,"input.inputtext[name=email]").send_keys("aa")
-# without tagname
+# Tag,class and attribute then use tag name.value of class[attribute=value]
+# with tag name
+#Driver.find_element(By.CSS_SELECTOR,"input.input text[name=email]").send_keys("aa")
+# without tag name
 
 Driver.find_element(By.CSS_SELECTOR,".inputtext[name=email]").send_keys("bb")
 

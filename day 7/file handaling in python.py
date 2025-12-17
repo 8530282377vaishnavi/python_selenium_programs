@@ -18,7 +18,7 @@ file=open('C:\python\python.txt', 'r') # open the file for reading
 
 
 # append the data in file
-# file= open('C:\python\python.txt', 'a') # i want add new line in existing file  (append the data)
+# file= open('C:\python\python.txt', 'a') # I want to add new line in existing file  (append the data)
 # file.write("I want to learn Python language \n")
 # file.close()
 

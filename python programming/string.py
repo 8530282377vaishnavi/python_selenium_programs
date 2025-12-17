@@ -188,4 +188,47 @@ a="python234programming"
 count_dl=count_dl(a)
 print("the count is",count_dl)
 
+# First Non-Repeating Character
+s = "automation"
+
+for i in s:
+    if s.count(i)==1:
+        print(i)
+        break
+
+# Reverse Each Word in Sentence
+s = "I am Ajinkya"
+print(' '.join(ch[::-1]for ch in s.split()))
+
+
+s = "I love Python"
+print(s.replace(" ", "@"))
+
+# Longest word in sentence
+s = "Python automation is powerful"
+s = s.split()
+b = ""
+for i in s:
+    if len(i)>len(b):
+        b=i
+print(b)
+
+# Swap First and Last Character
+s = "Python"
+a = s[-1]+s[1:-1]+s[0]
+print(a)
+
+# Compress String (aabbbcc → a2b3c2)
+a = 'aabbbcc'
+freq = {}
+for i in a:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+result = ''
+for key,value in freq.items():
+    result += key+str(value)
+
+print(result)
 
